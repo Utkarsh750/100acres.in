@@ -1,12 +1,15 @@
 import "./App.css";
 import AboutSignatureGlobal from "./components/AboutSignatureGlobal";
+import Banner from "./components/Banner";
 import ContactPage from "./components/ContactPage";
+import ContactPage2 from "./components/ContantPage2";
 import { Header } from "./components/Header/Header";
 import ImageGallery from "./components/ImageGallery/ImageGallery";
 import SiteplanLegends from "./components/SiteplanLegends";
 import Slider from "./components/Slider";
 import Footer from "./Footer";
 import FooterSlider from "./FooterSlider";
+import MapGallery from "./MapGallery";
 
 function App() {
   return (
@@ -26,6 +29,13 @@ function App() {
         <ContactPage />
       </section>
 
+      <section>
+        <ContactPage2 />
+      </section>
+
+      <section className=" w-full">
+        <Banner />
+      </section>
       <div className="flex w-full h-94">
         {/* Left Image */}
         <div className="w-1/2">
@@ -73,6 +83,11 @@ function App() {
         <span className="text-sm font-bold mb-6">Floor Plans trmp</span>
         <ImageGallery />
       </div>
+
+      {/* Contact Page 1 */}
+      <section className="w-full">
+        <MapGallery />
+      </section>
 
       {/* Site plan Legends one */}
       <div className="w-full bg-blue-950 mb-2 min-h-screen flex flex-col items-center justify-center">
